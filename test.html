@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 100px 450px;
+			}
+		</style>
+		<script>
+		function changeImage() { 
+			element=document.getElementById('myimage') 
+			if (element.src.match("bulbon")){ 
+				element.src="http://www.w3school.com.cn/i/eg_bulboff.gif"; 
+			} else { 
+				element.src="http://www.w3school.com.cn/i/eg_bulbon.gif"; 
+				} 
+			}
+		</script>
+	</head>
+
+	<body>
+		<img id="myimage" onclick="changeImage()" src="http://www.w3school.com.cn/i/eg_bulboff.gif">
+
+		<p>点击灯泡来点亮或熄灭这盏灯</p>
+	</body>
+
+</html>
